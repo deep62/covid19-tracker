@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>io.javabrains</groupId>
-	<artifactId>coronavirus-tracker</artifactId>
+	<artifactId>covid19-tracker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>coronavirus-tracker</name>
+	<name>covid19-tracker</name>
 	<description>corona virus tracker real time app</description>
 
 	<properties>
