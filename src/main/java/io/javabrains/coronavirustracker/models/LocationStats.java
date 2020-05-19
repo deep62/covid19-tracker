@@ -6,6 +6,7 @@ public class LocationStats {
     private int latestTotalCases;
     private int diffFromThePreviousDay;
 
+
     public String getState() {
         return state;
     }

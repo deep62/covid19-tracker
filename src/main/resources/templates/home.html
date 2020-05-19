@@ -24,9 +24,29 @@
 
         <hr class="my-4">
         <p>
-            <span>New cases reported since previous day :</span>
+            <span>New cases reported since last day :</span>
             <span th:text="${totalNewCases}"></span>
+        <hr class="my-4">
+        <span style="color:red">Total reported death cases as of today :</span>
+        <span th:text="${totalDeathCases}"></span>
+        <hr class="my-4">
+        <span style="color:red">Total reported death cases since last day :</span>
+        <span th:text="${totalDeathCasesFromPreviousDay}"></span>
+        <hr class="my-4">
+
+        <span style="color:green">Total recovered cases as of today :</span>
+        <span th:text="${totalRecoveredCases}"></span>
+        <hr class="my-4">
+        <span style="color:green">Total recovered since last day :</span>
+        <span th:text="${totalRecoveredFromLastDay}"></span>
+        <hr class="my-4">
+
+        <span style="color:orange">Total Active cases as of today :</span>
+        <span th:text="${totalActiveCases}"></span>
+
+
         </p>
+
     </div>
 
 
