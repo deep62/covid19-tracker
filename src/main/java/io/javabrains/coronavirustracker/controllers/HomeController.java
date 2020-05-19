@@ -34,14 +34,12 @@ public class HomeController {
         int totalRecoveredFromLastDay = allRecoveredStats.stream().mapToInt(recoveredStat->recoveredStat.getDiffOfRecoveredFromThePreviousDay()).sum();
 
         int totalActiveCases = totalReportedCases - totalRecoveredCases;
-
-        System.out.println("totalDeathCases"+totalDeathCases);
-        System.out.println("totalDeathCasesFromPreviousDay"+totalDeathCasesFromPreviousDay);
         model.addAttribute("locationStats",allStats);
         model.addAttribute("totalReportedCases",totalReportedCases);
         model.addAttribute("diffFromThePreviousDay",totalReportedCases);
         model.addAttribute("totalNewCases",totalNewCases);
         model.addAttribute("totalDeathCases",totalDeathCases);
+        model.addAttribute(("totalDeathCasesFromPreviousDay"),totalDeathCasesFromPreviousDay);
         model.addAttribute("totalRecoveredCases",totalRecoveredCases);
         model.addAttribute("totalRecoveredFromLastDay",totalRecoveredFromLastDay);
         model.addAttribute("totalActiveCases",totalActiveCases);
